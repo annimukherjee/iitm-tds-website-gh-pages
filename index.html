@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniruddha Mukherjee - IITM BSc</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: float 5s ease-in-out infinite;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+            transform: skew(-5deg);
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0.5em;
+            font-style: italic;
+        }
+        .institution {
+            font-size: 2em;
+            margin-top: 1em;
+            letter-spacing: 5px;
+            transform: rotate(-3deg);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .background-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .shape {
+            position: absolute;
+            opacity: 0.7;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            top: 20%;
+            left: 10%;
+            animation: pulse 4s infinite alternate;
+        }
+        .square {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.2);
+            bottom: 20%;
+            right: 10%;
+            animation: rotate 6s linear infinite;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 86px solid rgba(255, 255, 255, 0.2);
+            top: 60%;
+            left: 50%;
+            animation: bounce 5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+    </div>
+    <div class="container">
+        <h1>Aniruddha Mukherjee</h1>
+        <h2>"Studying TDS"</h2>
+        <div class="institution">IITM BSc</div>
+    </div>
+</body>
+</html>
